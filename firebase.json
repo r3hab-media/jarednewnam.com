@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/meet-with-me",
+        "destination": "https://meet.google.com/qhc-fqqx-ugi/",
+        "type": 301
+      }
+    ]    
+  }
+}

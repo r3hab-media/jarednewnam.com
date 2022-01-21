@@ -1,0 +1,58 @@
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin flex-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-row {
+  display: flex;
+  align-items: center;
+}
+
+//breakpoints
+@mixin phone-xxsmall {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin phone-xsmall {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-medium {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet-large {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-xlarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

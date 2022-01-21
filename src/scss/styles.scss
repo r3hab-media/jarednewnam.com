@@ -1,0 +1,62 @@
+@use 'variables'as *;
+@use 'mixins'as *;
+@use 'type'as *;
+@use 'vendors'as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'BioRhyme', sans-serif;
+  font-size: 16px;
+  background: $primary-color;
+  color: $darkgray;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  @include flex-center(column);
+  height: 100vh;
+  transition: $transition;
+
+  @include tablet-small {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+ul.social {
+  display: flex;
+  margin-top: 2rem;
+
+  @include tablet-small {
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  li {
+    margin: 0 .5rem;
+
+    a {
+      color: inherit;
+      transition: $transition;
+
+      &:hover {
+        color: rgb(247, 148, 29);
+      }
+    }
+  }
+}

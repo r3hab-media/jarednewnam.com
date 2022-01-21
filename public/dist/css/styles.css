@@ -1,0 +1,84 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+/* BioRhyme Font */
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;700;800&display=swap");
+h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h6 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  h6 {
+    font-size: 1.4rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "BioRhyme", sans-serif;
+  font-size: 16px;
+  background: #7FC7BB;
+  color: darkslategray;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  transition: all 0.4s ease;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+ul.social {
+  display: flex;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  ul.social {
+    width: 50%;
+    justify-content: space-around;
+  }
+}
+ul.social li {
+  margin: 0 0.5rem;
+}
+ul.social li a {
+  color: inherit;
+  transition: all 0.4s ease;
+}
+ul.social li a:hover {
+  color: #f7941d;
+}
+
+/*# sourceMappingURL=styles.css.map */
